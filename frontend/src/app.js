@@ -81,4 +81,11 @@ document.querySelector('.clear').addEventListener('click', handleClearClick);
 
 document.querySelector('.equals').addEventListener('click', calculate);
 
+// Additional TI-85 specific buttons (placeholder functionality)
+document.querySelectorAll('.function, .secondary').forEach(button => {
+    button.addEventListener('click', () => {
+        alert(`${button.textContent} function not implemented`);
+    });
+});
+
 updateDisplay();

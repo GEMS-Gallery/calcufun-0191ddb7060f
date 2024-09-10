@@ -18,6 +18,7 @@ actor Calculator {
           ?(operand1 / operand2)
         }
       };
+      case ("^") { ?(Float.pow(operand1, operand2)) };
       case (_) {
         Debug.print("Error: Invalid operation");
         null
